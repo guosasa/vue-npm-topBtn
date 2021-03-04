@@ -1,0 +1,64 @@
+{
+  "name": "top-btn",
+  "version": "0.0.1",
+  "description": "顶部按钮",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "fix": "standard --fix --plugin html '**/*.{js,vue}' | snazzy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guosasa/vue-npm-topBtn.git"
+  },
+  "standard": {
+    "ignore": [
+      "/dist/",
+      "/configs/",
+      "webpack.config.js"
+    ],
+    "globals": [
+      "nie",
+      "jQuery",
+      "Vue",
+      "VueRouter",
+      "Vuex",
+      "$",
+      "__DEBUG"
+    ],
+    "parser": "babel-eslint"
+  },
+  "author": "guoss",
+  "license": "ISC",
+  "keywords": [
+    "topbtn"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-component": "^1.1.1",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-plugin-transform-vue-jsx": "^3.5.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-stage-2": "^6.22.0",
+    "babel-runtime": "^6.26.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "happypack": "^5.0.0",
+    "less": "^3.0.1",
+    "less-loader": "^4.1.0",
+    "sprites-loader": "^0.7.1",
+    "style-loader": "^0.20.3",
+    "vue-loader": "^15.0.0-rc.2",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.18.0",
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+  }
+}
