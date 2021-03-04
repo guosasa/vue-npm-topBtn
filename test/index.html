@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app" style="width: 100%;height: 100%;overflow: hidden">
+    <h2 style="text-align: center">demo</h2>
+    <div class="scrollContainer" style="position:relative;margin:0 auto;width: 300px;height: 1000px;overflow-y: scroll">
+        <div style="height: 2000px">
+            <p>我是内容</p>
+            <p>我是内容</p>
+            <p>我是内容</p>
+            <p>我是内容</p>
+            <p>我是内容</p>
+            <p>我是内容</p>
+            <p>我是内容</p>
+            <p>我是内容</p>
+            <p>我是内容</p>
+            <p>我是内容</p>
+            <p>我是内容</p>
+            <p>我是内容</p>
+            <p>我是内容</p>
+            <p>我是内容</p>
+            <p>我是内容</p>
+        </div>
+         <top-btn class="mScroll"
+                 :distance="50"
+                  scrollContainer="scrollContainer"
+                  :withAnimation = true>
+             <div>我是slot用于动画节点等</div>
+         </top-btn>
+    </div>
+</div>
+<style type="text/css">
+    html, body {
+        overflow: hidden;
+    }
+
+    .mScroll {
+        position: fixed;
+        left: auto;
+        right: 0;
+        bottom: 0;
+    }
+</style>
+<script src="https://nie.res.netease.com/comm/js/zepto(mixNIE).last.js"></script>
+<script src="https://nie.res.netease.com/comm/js/nie/ref/??vue.2.5.0.js,vue-router.3.0.1.js,vuex.3.0.1.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
